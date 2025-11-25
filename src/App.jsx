@@ -1,25 +1,11 @@
-import React from 'react';
-import Header from './components/Header';
-import GameList from './components/GameList';
-import Footer from './components/Footer';
-import Joki from './components/Joki';
-import Tp from './components/Tp';
-import Pm from './components/pm';
-import About from './components/About';
-import ML from './TopUp/ML';
+import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { routeTree } from './routeTree.gen';
+
+const router = createRouter({ routeTree });
 
 function App() {
-  return (
-    <>
-      <Header />
-      <GameList />
-      <Joki />
-      <Tp />
-      <Pm />     
-      <About />
-      <Footer />
-    </>
-  );
+  // Mount the TanStack Router so components using its <Link> have the proper context.
+  return <RouterProvider router={router} />;
 }
 
 export default App;

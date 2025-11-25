@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "@tanstack/react-router";
+import React from "react";
 
 const games = [
   {
@@ -27,30 +27,7 @@ const games = [
     image: "/images/genshin-impact.png",
     path: "/",
   },
-  {
-    name: "Honor Of Kings",
-    publisher: "Tencent Games",
-    image: "/images/honor.png",
-    path: "/",
-  },
-  {
-    name: "Roblox - Voucher",
-    publisher: "Roblox Corporation",
-    image: "/images/roblox.png",
-    path: "/",
-  },
-  {
-    name: "Joki Rank Mobile Legends",
-    publisher: "Takapedia",
-    image: "/images/joki-ml.png",
-    path: "/",
-  },
-  {
-    name: "Jasa Mabar Casual",
-    publisher: "Takapedia",
-    image: "/logo.png",
-    path: "/",
-  },
+
 
 ];
 
@@ -77,7 +54,7 @@ const GamesList = () => {
     <section id="games" className="py-20 bg-gradient-to-b from-blue-300 to-blue-500">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-white mb-10 text-center">
-          LIST GAME
+          GAME POPULER
         </h2>
 
         {/* Grid Card */}
